@@ -1,7 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+
+	"github.com/MarkTBSS/go-dotenv/config"
+)
+
+func envPath() string {
+	if len(os.Args) == 1 {
+		return ".env"
+	} else {
+		return os.Args[1]
+	}
+}
 
 func main() {
-	fmt.Println("No Need to run again : 3")
+	cfg := config.LoadConfig(envPath())
+	fmt.Println(cfg.App())
+	fmt.Println(cfg.Db())
+	fmt.Println(cfg.Jwt())
 }
