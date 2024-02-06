@@ -1,3 +1,5 @@
-module github.com/MarkTBSS/go-dotenv
+module github.com/MarkTBSS/go-liveLoading
 
 go 1.21.5
+
+require github.com/joho/godotenv v1.5.1 // indirect
