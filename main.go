@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/MarkTBSS/go-dotenv/config"
+	"github.com/MarkTBSS/038-dotenv/config"
 )
 
 func envPath() string {

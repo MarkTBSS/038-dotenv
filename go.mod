@@ -1,4 +1,4 @@
-module github.com/MarkTBSS/go-dotenv
+module github.com/MarkTBSS/038-dotenv
 
 go 1.21.5
 
